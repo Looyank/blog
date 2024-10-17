@@ -48,7 +48,7 @@ let pageTitle: string
 if (title) {
   pageTitle = `${title} - ${siteConfig.title}`
 } else {
-  pageTitle = `${siteConfig.title} - ${siteConfig.subtitle}`
+  pageTitle = `Hi, ${siteConfig.title}`
 }
 
 const favicons: Favicon[] =
@@ -61,12 +61,12 @@ if (!lang) {
 const siteLang = lang.replace('_', '-')
 
 const bannerOffsetByPosition = {
-	'top': '30vh',
-	'center': '15vh',
-	'bottom': '0'
+  top: '30vh',
+  center: '15vh',
+  bottom: '0',
 }
-const bannerOffset = bannerOffsetByPosition[siteConfig.banner.position || 'center']
-
+const bannerOffset =
+  bannerOffsetByPosition[siteConfig.banner.position || 'center']
 ---
 
 <!DOCTYPE html>
@@ -271,7 +271,8 @@ function loadTheme() {
 }
 
 function loadHue() {
-	setHue(getHue())
+	const ran = Math.floor((Math.random() * 360))
+	setHue(ran)
 }
 
 function initCustomScrollbar() {

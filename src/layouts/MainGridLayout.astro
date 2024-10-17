@@ -21,7 +21,13 @@ const hasBannerCredit =
 const hasBannerLink = !!siteConfig.banner.credit.url
 ---
 
+
+
 <Layout title={title} banner={banner} description={description} lang={lang} setOGTypeArticle={setOGTypeArticle}>
+<div
+  id="scroll-progress"
+  class="bg-orange-600 h-1 fixed top-0 left-0 z-[100]">
+</div>
 <slot slot="head" name="head"></slot>
 <div id="top-row" class="z-50 pointer-events-none relative transition-all duration-700 max-w-[var(--page-width)] px-0 md:px-4 mx-auto" class:list={[""]}>
     <div id="navbar-wrapper" class="pointer-events-auto sticky top-0 transition-all">
@@ -69,3 +75,14 @@ const hasBannerLink = !!siteConfig.banner.credit.url
     </div>
 </div>
 </Layout>
+
+<script>
+window.addEventListener("scroll", function () {
+    const scrollableHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
+    const scrolled = window.scrollY;
+    const progressBar = document.getElementById("scroll-progress")!;
+    const progress = (scrolled / scrollableHeight) * 100;
+    progressBar.style.width = progress + "%";
+  });
+</script>
