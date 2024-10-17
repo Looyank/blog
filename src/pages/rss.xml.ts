@@ -9,7 +9,6 @@ const parser = new MarkdownIt()
 
 export async function GET(context: APIContext) {
   const blog = await getSortedPosts()
-
   return rss({
     title: siteConfig.title,
     description: siteConfig.subtitle || 'No description',
