@@ -1,6 +1,6 @@
 # About
 
-Hi, this is Loren, a software engineer.
+Hi, this is Looyank, a software engineer.
 
 Recent Hobbies
 

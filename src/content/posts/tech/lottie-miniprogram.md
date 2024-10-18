@@ -3,7 +3,6 @@ title: 小程序使用 lottie-miniprogram 问题
 published: 2023-11-16
 description: 小程序使用 lottie 动画不清晰以及 windows 出现的bug
 tags: [miniprogram]
-author: BlackBerry
 category: 'tech'
 draft: false
 lang: ''

@@ -12,7 +12,7 @@ export async function GET(context: APIContext) {
   return rss({
     title: siteConfig.title,
     description: 'feedId:66321001434793986+userId:63034699812466688',
-    site: context.site ?? 'https://blog.blackberry009.top',
+    site: context.site ?? 'https://looyank.cc',
     items: blog.map(post => {
       return {
         title: post.data.title,

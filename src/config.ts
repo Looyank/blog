@@ -7,7 +7,7 @@ import type {
 import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
-  title: 'Loren',
+  title: 'Looyank',
   subtitle: 'Personal Site',
   lang: 'en',         // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko'
   themeColor: {
@@ -40,7 +40,7 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.About,
     {
       name: 'GitHub',
-      url: 'https://github.com/BlackBerry009/website',     // Internal links should not include the base path, as it is automatically added
+      url: 'https://github.com/Looyank/blog',     // Internal links should not include the base path, as it is automatically added
       external: true,                               // Show an external link icon and will open in a new tab
     },
   ],
@@ -48,7 +48,7 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/avatar.webp',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-  name: 'Loren',
+  name: 'Looyank',
   bio: '保持热爱，奔赴山海',
   links: [
     // {
@@ -61,7 +61,7 @@ export const profileConfig: ProfileConfig = {
     {
       name: 'GitHub',
       icon: 'fa6-brands:github',
-      url: 'https://github.com/BlackBerry009',
+      url: 'https://github.com/Looyank',
     },
   ],
 }

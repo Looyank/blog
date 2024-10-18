@@ -3,7 +3,6 @@ title: grid-animate
 published: 2023-03-26
 description: 通过 grid 属性给展开折叠加上动画效果
 tags: [css]
-author: BlackBerry
 category: 'tech'
 draft: false
 lang: ''
